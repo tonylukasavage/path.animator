@@ -4,7 +4,7 @@ A simple Appcelerator Titanium iOS module for adding CABasicAnimation rotations 
 
 ## Why?
 
-iOS transforms are specified as matrices. These matrices are the result of trigonometric calculations, which results in a limitation in the range of values you can specify for rotation values. For example, on iOS, the transforms can make distinction between a rotation of 180 degrees or 0 degrees. The matrix values are the same. 
+iOS transforms are specified as matrices. These matrices are the result of trigonometric calculations, which results in a limitation in the range of values you can specify for rotation values. For example, on iOS, the transforms can't make distinction between a rotation of 180 degrees or 0 degrees. The matrix values are the same. 
 
 Android does not have this limitation. This is not a result of how Titanium implements these features, it is a limitation of iOS. A quick google search will show that native developers have issues with this as well.
 
