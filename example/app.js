@@ -19,10 +19,11 @@ foo.add(image);
 
 foo.addEventListener('click', function() {
 	foo.rotate({
-		angle: 720,
-		duration: 3000,
+		angle: 360,
+		duration: 300,
 		delay: 1000,
-		timingFunction: Ti.UI.iOS.ANIMATION_CURVE_EASE_OUT
+		repeat: 10
+		//timingFunction: Ti.UI.iOS.ANIMATION_CURVE_EASE_OUT
 	});
 });
  
