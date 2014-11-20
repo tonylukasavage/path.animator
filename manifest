@@ -15,4 +15,4 @@ name: pathanimator
 moduleid: path.animator
 guid: 29e7f779-2d45-4b17-b1c7-02cd9b445af8
 platform: iphone
-minsdk: 1.8.1
+minsdk: 3.2.0.GA
