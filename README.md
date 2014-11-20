@@ -1,4 +1,4 @@
-*kind of* maintained by [@jasonkneen]{https://twitter.com/#!/jasonkneen)
+*kind of* maintained by [@jasonkneen](https://twitter.com/#!/jasonkneen)
 
 # path.animator by [@tonylukasavage](https://twitter.com/#!/tonylukasavage)
 
