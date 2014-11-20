@@ -31,16 +31,16 @@
     float delay = [[args objectForKey:@"delay"] floatValue] / 1000.0;
     float duration = [[args objectForKey:@"duration"] floatValue] / 1000.0;
     float angle = [[args objectForKey:@"angle"] floatValue] * M_PI / 180.0;
+    float repeat = [[args objectForKey:@"repeat"] floatValue];
 
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat:angle];
     rotationAnimation.duration = duration;
     rotationAnimation.cumulative = YES;
-    rotationAnimation.repeatCount = 1.0;
+    rotationAnimation.repeatCount = repeat;
     rotationAnimation.fillMode = kCAFillModeForwards;
-    rotationAnimation.beginTime = CACurrentMediaTime() + delay;
-    rotationAnimation.timingFunction = [CAMediaTimingFunction functionWithName:timingFunction];
+    rotationAnimation.beginTime = CACurrentMediaTime() + delay;    
     
     [self.layer addAnimation:rotationAnimation forKey:@"rotationAnimation"];
 }
