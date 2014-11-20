@@ -1,4 +1,4 @@
-> **NO LONGER MAINTAINED**
+*kind of* maintained by [@jasonkneen]
 
 # path.animator by [@tonylukasavage](https://twitter.com/#!/tonylukasavage)
 
