@@ -14,7 +14,7 @@ In order to work around iOS's limitations, this module uses the more powerful CA
 
 ## How?
 
-Check out the [exmaple/app.js](https://github.com/tonylukasavage/path.animator/blob/master/example/app.js) for usage. In case you are too lazy to look...
+Check out the [example/app.js](https://github.com/tonylukasavage/path.animator/blob/master/example/app.js) for usage. In case you are too lazy to look...
 
 ```javascript
 var window = Ti.UI.createWindow({
@@ -38,10 +38,11 @@ foo.add(image);
 
 foo.addEventListener('click', function() {
 	foo.rotate({
-		angle: 720,
+		angle: 360,
 		duration: 3000,
 		delay: 1000,
-		timingFunction: Ti.UI.iOS.ANIMATION_CURVE_EASE_OUT
+		repeat:10,
+		//timingFunction: Ti.UI.iOS.ANIMATION_CURVE_EASE_OUT
 	});
 });
  
