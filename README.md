@@ -1,6 +1,6 @@
 *kind of* maintained by [@jasonkneen](https://twitter.com/#!/jasonkneen)
 
-# path.animator by [@tonylukasavage](https://twitter.com/#!/tonylukasavage)
+# path.animator
 
 A simple Appcelerator Titanium iOS module for adding CABasicAnimation rotations to standard Titanium Views.
 
