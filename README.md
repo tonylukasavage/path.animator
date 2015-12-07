@@ -42,6 +42,7 @@ foo.addEventListener('click', function() {
 		duration: 3000,
 		delay: 1000,
 		repeat:10,
+		autoreverse:true,
 		//timingFunction: Ti.UI.iOS.ANIMATION_CURVE_EASE_OUT
 	});
 });

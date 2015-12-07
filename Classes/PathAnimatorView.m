@@ -32,6 +32,7 @@
     float duration = [[args objectForKey:@"duration"] floatValue] / 1000.0;
     float angle = [[args objectForKey:@"angle"] floatValue] * M_PI / 180.0;
     float repeat = [[args objectForKey:@"repeat"] floatValue];
+    BOOL autoreverse = [[args objectForKey:@"autoreverse"] boolValue];
 
     CABasicAnimation* rotationAnimation;
     rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
@@ -39,6 +40,9 @@
     rotationAnimation.duration = duration;
     rotationAnimation.cumulative = YES;
     rotationAnimation.repeatCount = repeat;
+    if (autoreverse) {
+        rotationAnimation.autoreverses = YES;
+    }
     rotationAnimation.fillMode = kCAFillModeForwards;
     rotationAnimation.beginTime = CACurrentMediaTime() + delay;    
     
